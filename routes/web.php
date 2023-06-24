@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\OpenAIComponent;
+use App\Http\Livewire\ChatBotComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,4 +29,20 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+});
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/openai', OpenAIComponent::class)->name('openai');
+});
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/chatbot', ChatBotComponent::class)->name('chatbot');
 });
