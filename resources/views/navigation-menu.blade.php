@@ -15,8 +15,8 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link href="{{ route('openai') }}" :active="request()->routeIs('openai')">
-                        {{ __('OpenAI') }}
+                    <x-nav-link href="{{ route('transcribe') }}" :active="request()->routeIs('transcribe')">
+                        {{ __('Transkrip') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('chatbot') }}" :active="request()->routeIs('chatbot')">
                         {{ __('ChatBot') }}
@@ -148,8 +148,8 @@
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="{{ route('openai') }}" :active="request()->routeIs('openai')">
-                {{ __('OpenAI') }}
+            <x-responsive-nav-link href="{{ route('transcribe') }}" :active="request()->routeIs('transcribe')">
+                {{ __('Transcribe') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('chatbot') }}" :active="request()->routeIs('chatbot')">
                 {{ __('ChatBot') }}
