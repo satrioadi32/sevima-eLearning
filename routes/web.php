@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\OpenAIController;
+use App\Http\Livewire\OpenAIComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('livewire.landing-page');
 });
 
-Route::post('/openai', [OpenAIController::class, 'generateCompletion']);
+Route::get('/openai', OpenAIComponent::class)->name('openai');
 
 Route::middleware([
     'auth:sanctum',
