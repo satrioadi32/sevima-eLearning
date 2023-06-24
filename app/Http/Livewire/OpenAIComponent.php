@@ -12,20 +12,21 @@ class OpenAIComponent extends Component
 
     public function render()
     {
-        return view('livewire.open-ai');
+        return view('livewire.openai');
     }
 
     public function generateCompletion()
     {
         $response = Http::withHeaders([
-            'Authorization' => 'Bearer YOUR_OPENAI_API_KEY',
+            'Authorization' => 'Bearer ' . config('services.openai.api_key'),
             'Content-Type' => 'application/json',
-        ])->post('https://api.openai.com/v1/engines/davinci-codex/completions', [
+        ])->post('https://api.openai.com/v1/engines/davinci/completions', [
             'prompt' => $this->prompt,
             'max_tokens' => 100,
         ]);
 
         $completion = json_decode($response->getBody(), true);
+        dd($completion);
         $this->output = $completion['choices'][0]['text'];
     }
 }
