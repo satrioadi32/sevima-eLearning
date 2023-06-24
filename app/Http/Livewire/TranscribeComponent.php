@@ -21,9 +21,9 @@ class TranscribeComponent extends Component
 
     public function transcribe()
     {
-        $this->validate([
-            'audio' => 'required|mimes:audio/mpeg,audio/wav',
-        ]);
+        // $this->validate([
+        //     'audio' => 'required|mimes:audio/mpeg,audio/wav',
+        // ]);
 
         $path = $this->audio->store('public');
         $url = asset('storage/' . $path);

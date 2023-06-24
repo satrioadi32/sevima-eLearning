@@ -112,7 +112,9 @@
                 Kemudahan dalam Mencari Materi
             </h3>
             <p class="text-gray-600 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                Kemudahan dalam mencari materi menggunakan teknologi AI membawa manfaat signifikan dalam pengalaman pencarian informasi.<br>
+                Dengan algoritma pemrosesan bahasa alami dan analisis big data, sistem pencarian AI dapat memberikan hasil yang cepat,<br>
+                relevan, dan berkualitas.
               <br />
               <br />
 
@@ -135,7 +137,9 @@
                 Belajar Lebih Mudah
               </h3>
               <p class="text-gray-600 mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                Belajar menjadi lebih mudah berkat teknologi AI yang menyediakan solusi inovatif dan adaptif.<br> 
+                Dengan personalisasi dan rekomendasi yang cerdas, sistem pembelajaran AI memberikan konten yang sesuai dengan kebutuhan individu.<br>
+                Algoritma pembelajaran mesin yang pintar mampu menganalisis pola belajar dan memberikan rekomendasi yang tepat. 
                 <br />
                 <br />
                 Images from:

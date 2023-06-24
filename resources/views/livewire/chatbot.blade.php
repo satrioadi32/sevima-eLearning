@@ -4,9 +4,10 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="container max-w-5xl mx-auto mb-8">
-                    <h2 class="w-full my-2 text-3xl font-bold leading-tight text-center text-grey-800 px-4 py-6">
+                    <h2 class="w-full my-2 text-3xl font-bold leading-tight text-center text-grey-800">
                         Apakah ada yang bisa dibantu?
                     </h2>
+                    <p class="text-based leading-tight text-center px-4 py-6">Ada Udang di balik batu<br> Anda kebingungan Kami Siap Bantu!! WELL</p>
                     <div class="flex justify-center items-center">
                         <input placeholder="Masukkan Teks Disini" id="prompt" class="mr-2 px-4 py-6 shadow" wire:model="prompt" style="width: 100vh; height:50px; font-size:18px;">
                         <button class="hover:bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" wire:click="generateCompletion()">

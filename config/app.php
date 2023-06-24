@@ -185,6 +185,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        'OpenAI' => OpenAI\Laravel\Facades\OpenAI::class,
     ])->toArray(),
 
 ];

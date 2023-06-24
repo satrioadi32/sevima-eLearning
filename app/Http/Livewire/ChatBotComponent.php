@@ -33,7 +33,7 @@ class ChatBotComponent extends Component
             $completion = json_decode($response->getBody(), true);
             $this->output = $completion['choices'][0]['text'];
         } catch (\Exception $e) {
-            // Menangani error
+            // Tangani error yang terjadi
             $this->output = 'Error: ' . $e->getMessage();
         }
     }
